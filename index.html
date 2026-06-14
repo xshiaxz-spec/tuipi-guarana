@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raízes Tupi-Guarani</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- navbar -->
+  <nav class="navbar">
+    <div class="logo">Raízes Tupi-Guarani</div>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="historia.html">História</a></li>
+      <li><a href="arte.html">Arte e Tradição</a></li>
+      <li><a href="vozes.html">Vozes e Liderança</a></li>
+    </ul>
+  </nav>
+
+  <!-- hero section -->
+  <section class="hero">
+    <div class="hero-content">
+      <p class="hero-tag">Guia Cultural</p>
+
+      <h1>Raízes Tupi-Guarani</h1>
+
+      <p>
+        Um guia cultural sobre a história, as tradições e a resistência
+        dos povos Tupi-Guarani no Brasil.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#sobre" class="btn">Explorar cultura</a>
+        <a href="historia.html" class="btn btn-outline">Conhecer história</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- sobre -->
+  <section class="sobre-guia">
+    <h2>Sobre o guia cultural</h2>
+    <p>
+      Este site apresenta um guia cultural sobre os povos Tupi-Guarani,
+      destacando sua história, suas tradições, suas expressões artísticas
+      e as vozes que mantêm essa cultura viva até hoje.
+    </p>
+  </section>
+
+  <!-- atalhos -->
+  <section class="atalhos">
+    <h2>Explore o conteúdo</h2>
+
+    <div class="atalhos-container">
+      <a href="historia.html" class="atalho-card">
+        <h3>História e Influências</h3>
+        <p>Conheça a origem, os povos e as resistências culturais.</p>
+      </a>
+
+      <a href="arte.html" class="atalho-card">
+        <h3>Arte, Festas e Danças</h3>
+        <p>Veja grafismos, músicas, danças e tradições.</p>
+      </a>
+
+      <a href="vozes.html" class="atalho-card">
+        <h3>Vozes Locais</h3>
+        <p>Conheça lideranças e personalidades indígenas.</p>
+      </a>
+    </div>
+  </section>
+
+  <!-- sobre os tupi -->
+  <section class="sobre fade-in-scroll" id="sobre">
+    <div class="sobre-content">
+      <h2>Quem são os Tupi-Guarani?</h2>
+
+      <p>
+        Os povos Tupi-Guarani fazem parte de uma das grandes famílias indígenas
+        do Brasil. Sua cultura está presente na língua, nos costumes, na relação
+        com a natureza e em diversas tradições que influenciaram a formação da
+        identidade brasileira.
+      </p>
+
+      <p>
+        Mesmo após séculos de mudanças, conflitos e resistência, muitos grupos
+        Tupi-Guarani continuam mantendo vivas suas línguas, memórias, práticas
+        culturais e formas de organização comunitária.
+      </p>
+    </div>
+  </section>
+
+  <!-- curiosidades -->
+  <section class="curiosidades">
+    <div class="curiosidades-content">
+      <h2>Curiosidades Tupi-Guarani</h2>
+
+      <details>
+        <summary>Influência na língua portuguesa</summary>
+        <p>
+          Muitas palavras usadas no Brasil têm origem indígena, especialmente
+          do tronco Tupi, como abacaxi, pipoca, jacaré, arara e mandioca.
+        </p>
+      </details>
+
+      <details>
+        <summary>Relação com a natureza</summary>
+        <p>
+          Para muitos povos indígenas, a natureza não é apenas um recurso,
+          mas parte essencial da vida, da espiritualidade e da organização da comunidade.
+        </p>
+      </details>
+
+      <details>
+        <summary>Resistência cultural</summary>
+        <p>
+          Apesar de séculos de violência, apagamento e preconceito, muitos povos
+          Tupi-Guarani continuam preservando suas línguas, tradições e memórias.
+        </p>
+      </details>
+    </div>
+  </section>
+
+  <!-- destaque cultural -->
+  <section class="destaque-cultural">
+    <div class="sobre-content">
+      <h2>Uma cultura que permanece viva</h2>
+
+      <p>
+        A influência dos povos Tupi-Guarani pode ser observada na língua,
+        na culinária, nos nomes de cidades, rios e animais, além das tradições
+        que continuam sendo preservadas por diversas comunidades indígenas.
+      </p>
+    </div>
+  </section>
+
+  <!-- galeria -->
+  <section class="galeria">
+    <h2>Galeria Cultural</h2>
+
+    <div class="carrossel">
+      <button class="carrossel-btn prev">&#10094;</button>
+
+      <div class="carrossel-imagens">
+        <img src="img/aldeia.jpg.jpg" class="slide ativo" alt="Aldeia indígena">
+        <img src="img/pintura.jpg.jpg" class="slide" alt="Pintura corporal indígena">
+        <img src="img/lider.jpg" class="slide" alt="Liderança indígena">
+      </div>
+
+      <button class="carrossel-btn next">&#10095;</button>
+    </div>
+  </section>
+
+    <section class="formulario-section">
+    <h2>Participe do guia</h2>
+    <p>
+      Envie uma mensagem, sugestão ou reflexão sobre a importância da cultura
+      indígena no Brasil.
+    </p>
+
+    <form class="formulario" id="formulario">
+  <input type="text" id="nome" placeholder="Seu nome" required>
+
+  <input type="email" id="email" placeholder="Seu e-mail" required>
+
+  <textarea
+    id="mensagem"
+    placeholder="Sua mensagem"
+    required>
+  </textarea>
+
+  <button type="submit">Enviar mensagem</button>
+</form>
+
+<p id="resposta-formulario"></p>
+  </section>
+  <!-- rodapé -->
+  <footer class="footer">
+    <div class="footer-content">
+
+      <div>
+        <h3>Raízes Tupi-Guarani</h3>
+        <p>
+          Guia cultural desenvolvido como trabalho escolar, com o objetivo
+          de valorizar a história, a arte, as tradições e a resistência dos
+          povos Tupi-Guarani.
+        </p>
+      </div>
+
+      <div>
+        <h4>Navegação</h4>
+        <a href="index.html">Início</a>
+        <a href="historia.html">História</a>
+        <a href="arte.html">Arte e Tradição</a>
+        <a href="vozes.html">Vozes e Liderança</a>
+      </div>
+
+      <div>
+        <h4>Sobre o Grupo</h4>
+        <p>
+          Projeto desenvolvido por estudantes para apresentar aspectos
+          históricos, culturais e sociais dos povos Tupi-Guarani.
+        </p>
+      </div>
+
+    </div>
+
+
+
+<div class="footer-referencias">
+  <h4>Referências</h4>
+
+  <ul>
+    <li><a href="https://www.gov.br/funai" target="_blank">FUNAI</a></li>
+    <li><a href="https://pib.socioambiental.org" target="_blank">ISA</a></li>
+    <li><a href="https://www.ibge.gov.br" target="_blank">IBGE</a></li>
+    <li><a href="https://www.gov.br/povosindigenas" target="_blank">Ministério dos Povos Indígenas</a></li>
+    <li><a href="http://www.museudoindio.gov.br" target="_blank">Museu do Índio</a></li>
+  </ul>
+
+  <a class="pdf-btn" href="docs/referencias.pdf" target="_blank">
+    📄 Documento PDF
+  </a>
+</div>
+
+
+    <div class="footer-bottom">
+      <p>© 2026 - Raízes Tupi-Guarani | Todos os direitos reservados.</p>
+      
+    </div>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.15
+    });
+
+    const hiddenElements = document.querySelectorAll('.fade-in-scroll');
+    hiddenElements.forEach((el) => observer.observe(el));
+  </script>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+.pagina-vozes {
+  background-image:
+    linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+    url("../img/lider.jpg");
+
+  background-size: cover;
+  background-position: center;
+}
+
+.vozes-intro,
+.formulario-section {
+  padding: 80px 8%;
+  background: #f4ead8;
+  text-align: center;
+}
+
+.vozes-intro h2,
+.liderancas h2,
+.agenda-section h2,
+.formulario-section h2 {
+  font-size: 2.5rem;
+  color: #1b4332;
+  margin-bottom: 20px;
+}
+
+.vozes-intro p,
+.formulario-section p {
+  max-width: 850px;
+  margin: 0 auto;
+  color: #3a2415;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.liderancas {
+  padding: 80px 8%;
+  background: #fffaf2;
+  text-align: center;
+}
+
+.liderancas-grid {
+  margin-top: 35px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.lider-card {
+  background: white;
+  padding: 28px;
+  border-radius: 18px;
+  border-top: 5px solid #f4c542;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  transition: 0.3s;
+}
+
+.lider-card:hover {
+  transform: translateY(-8px);
+}
+
+.lider-card h3 {
+  color: #7a3e1d;
+  margin-bottom: 12px;
+}
+
+.lider-card p {
+  color: #3a2415;
+  line-height: 1.7;
+}
+
+.agenda-section {
+  padding: 80px 8%;
+  background: #1b4332;
+  text-align: center;
+}
+
+.agenda-section h2 {
+  color: #f4c542;
+}
+
+.agenda-lista {
+  max-width: 850px;
+  margin: 35px auto 0;
+  display: grid;
+  gap: 18px;
+}
+
+.agenda-item {
+  background: #f5f1e8;
+  padding: 22px;
+  border-radius: 16px;
+  text-align: left;
+}
+
+.agenda-item span {
+  display: inline-block;
+  font-weight: bold;
+  color: #7a3e1d;
+  margin-bottom: 8px;
+}
+
+.agenda-item p {
+  color: #3a2415;
+     line-height: 1.6;
+}
+

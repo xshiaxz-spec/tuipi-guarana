@@ -1,0 +1,12 @@
+{
+  "name": "raizes-tupi-guarani",
+  "version": "1.0.0",
+  "main": "js/servidor.js",
+  "scripts": {
+    "start": "node js/servidor.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
+  }
+}

@@ -1,0 +1,132 @@
+.pagina-arte {
+  background-image:
+    linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+    url("../img/pintura.jpg.jpg");
+
+  background-size: cover;
+  background-position: center;
+}
+
+.arte-intro {
+  padding: 80px 8%;
+  background: #f4ead8;
+  text-align: center;
+}
+
+.arte-intro h2,
+.expressoes h2,
+.video-texto h2,
+.galeria-arte h2 {
+  font-size: 2.5rem;
+  color: #1b4332;
+  margin-bottom: 20px;
+}
+
+.arte-intro p {
+  max-width: 850px;
+  margin: auto;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #3a2415;
+}
+
+.expressoes {
+  padding: 80px 8%;
+  background: #fffaf2;
+  text-align: center;
+}
+
+.expressoes-grid {
+  margin-top: 35px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 25px;
+}
+
+.expressao-card {
+  background: white;
+  padding: 28px;
+  border-radius: 18px;
+  border-top: 5px solid #f4c542;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  transition: 0.3s;
+}
+
+.expressao-card:hover {
+  transform: translateY(-8px);
+}
+
+.expressao-card h3 {
+  color: #7a3e1d;
+  margin-bottom: 12px;
+}
+
+.expressao-card p {
+  color: #3a2415;
+  line-height: 1.7;
+}
+
+.video-section {
+  padding: 80px 8%;
+  background: #1b4332;
+  color: white;
+  text-align: center;
+}
+
+.video-texto h2 {
+  color: #f4c542;
+}
+
+.video-texto p {
+  max-width: 800px;
+  margin: 0 auto 35px;
+  line-height: 1.7;
+  font-size: 1.1rem;
+}
+
+.video-container {
+  max-width: 850px;
+  height: 450px;
+  margin: 0 auto;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.35);
+}
+
+.video-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.galeria-arte {
+  padding: 80px 8%;
+  background: #f5f1e8;
+  text-align: center;
+}
+
+.galeria-grid {
+  margin-top: 35px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.galeria-grid img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.16);
+  transition: 0.3s;
+}
+
+.galeria-grid img:hover {
+  transform: scale(1.03);
+}
+
+@media (max-width: 768px) {
+  .video-container {
+    height: 260px;
+  }
+}
