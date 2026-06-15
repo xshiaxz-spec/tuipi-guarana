@@ -47,7 +47,7 @@ if (formulario) {
     try {
 
       const requisicao = await fetch(
-        "http://localhost:3000/api/mensagens",
+        "https://tuipi-guarana.onrender.com/api/mensagens",
         {
           method: "POST",
           headers: {
