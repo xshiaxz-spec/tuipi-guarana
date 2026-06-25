@@ -130,3 +130,35 @@
     height: 260px;
   }
 }
+
+@media (max-width: 768px) {
+  .arte-intro,
+  .expressoes,
+  .video-section,
+  .galeria-arte {
+    padding: 50px 6%;
+  }
+
+  .arte-intro h2,
+  .expressoes h2,
+  .video-texto h2,
+  .galeria-arte h2 {
+    font-size: 1.8rem;
+  }
+
+  .video-container {
+    height: 220px;
+  }
+
+  .galeria-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .galeria-grid img {
+    height: 220px;
+  }
+
+  .expressoes-grid {
+    grid-template-columns: 1fr;
+  }
+}

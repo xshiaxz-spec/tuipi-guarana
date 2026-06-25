@@ -104,3 +104,27 @@
      line-height: 1.6;
 }
 
+
+@media (max-width: 768px) {
+  .vozes-intro,
+  .liderancas,
+  .agenda-section,
+  .formulario-section {
+    padding: 50px 6%;
+  }
+
+  .vozes-intro h2,
+  .liderancas h2,
+  .agenda-section h2,
+  .formulario-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .liderancas-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .agenda-lista {
+    gap: 14px;
+  }
+}

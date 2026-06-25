@@ -93,3 +93,31 @@
     height: 260px;
   }
 }
+
+@media (max-width: 768px) {
+  .sobre-guia,
+  .sobre,
+  .curiosidades,
+  .destaque-cultural,
+  .mapa-section {
+    padding: 50px 6%;
+  }
+
+  .mapa-card {
+    flex-direction: column;
+    padding: 22px;
+  }
+
+  .mapa-container {
+    width: 100%;
+    height: 220px;
+  }
+
+  .mapa-texto h2 {
+    font-size: 1.8rem;
+  }
+
+  .timeline-item {
+    padding: 18px;
+  }
+}

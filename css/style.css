@@ -472,35 +472,235 @@ details p {
 }
 
 
-/* RESPONSIVIDADE */
+/* MENU HAMBÚRGUER */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  z-index: 1100;
+}
 
+.menu-toggle span {
+  display: block;
+  width: 26px;
+  height: 3px;
+  background: white;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+
+.menu-toggle.aberto span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.menu-toggle.aberto span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.aberto span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* CONTATO NO RODAPÉ */
+.footer-contato {
+  padding: 20px 8%;
+  background: #0d1f17;
+  text-align: center;
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+.footer-contato p {
+  color: #aaa;
+  font-size: 0.9rem;
+  margin-bottom: 6px;
+}
+
+.footer-contato a {
+  color: #f4c542;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.95rem;
+  transition: 0.3s;
+}
+
+.footer-contato a:hover {
+  color: #fff;
+}
+
+/* REFERÊNCIAS */
+.footer-referencias {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.footer-referencias h4 {
+  color: #f4c542;
+  margin-bottom: 12px;
+}
+
+.footer-referencias ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+  justify-content: flex-start;
+}
+
+.footer-referencias ul li a {
+  color: #f5f1e8;
+  text-decoration: none;
+  font-size: 0.9rem;
+  display: inline;
+  margin: 0;
+}
+
+.footer-referencias ul li a:hover {
+  color: #f4c542;
+}
+
+.pdf-btn {
+  display: inline-block;
+  margin-top: 14px;
+  padding: 8px 18px;
+  border-radius: 20px;
+  background: #f4c542;
+  color: #1b1b1b !important;
+  font-weight: bold;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.pdf-btn:hover {
+  background: #e0b334;
+}
+
+/* RESPONSIVIDADE */
 
 @media (max-width: 768px) {
 
+  /* Navbar mobile */
+  .menu-toggle {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(27, 67, 50, 0.98);
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    font-size: 1.3rem;
+    z-index: 1050;
+  }
+
+  .nav-links.aberto {
+    display: flex;
+  }
+
+  /* Hero mobile */
+  .hero {
+    padding: 0 6%;
+    min-height: calc(100vh - 65px);
+  }
+
   .hero h1 {
-    font-size: 2.8rem;
+    font-size: 2.2rem;
+    line-height: 1.2;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
   }
 
   .hero-buttons {
     flex-direction: column;
+    gap: 10px;
   }
 
-  .nav-links {
-    gap: 15px;
-    font-size: 0.9rem;
+  .btn {
+    text-align: center;
   }
 
-  .carrossel {
-    height: 260px;
+  /* Seções */
+  .sobre-guia,
+  .atalhos,
+  .sobre,
+  .curiosidades,
+  .destaque-cultural,
+  .galeria,
+  .formulario-section,
+  .destaques {
+    padding: 50px 6%;
   }
 
-  .footer-content {
+  .sobre h2,
+  .sobre-guia h2,
+  .atalhos h2,
+  .curiosidades h2,
+  .destaque-cultural h2,
+  .galeria h2,
+  .formulario-section h2,
+  .destaques h2 {
+    font-size: 1.8rem;
+  }
+
+  /* Cards */
+  .atalhos-container {
     flex-direction: column;
+    align-items: center;
   }
 
   .atalho-card {
     width: 100%;
-    max-width: 350px;
+    max-width: 400px;
+  }
+
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  /* Carrossel */
+  .carrossel {
+    height: 220px;
+  }
+
+  /* Formulário */
+  .formulario input,
+  .formulario textarea {
+    font-size: 0.95rem;
+  }
+
+  /* Rodapé */
+  .footer {
+    padding: 40px 6% 20px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .footer-referencias ul {
+    flex-direction: column;
+    gap: 8px;
   }
 }
 .destaque-cultural {

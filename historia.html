@@ -13,7 +13,13 @@
   <nav class="navbar">
     <div class="logo">Raízes Tupi-Guarani</div>
 
-    <ul class="nav-links">
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <ul class="nav-links" id="navLinks">
       <li><a href="index.html">Início</a></li>
       <li><a href="historia.html">História</a></li>
       <li><a href="arte.html">Arte e Tradição</a></li>
@@ -214,9 +220,36 @@
 
     <div class="footer-bottom">
       <p>© 2026 - Raízes Tupi-Guarani | Todos os direitos reservados.</p>
-      
     </div>
   </footer>
+
+  <div class="footer-contato">
+    <p>Contato:</p>
+    <a href="mailto:davi.barbosa@gsuite.iff.edu.br">davi.barbosa@gsuite.iff.edu.br</a>]
+    <br>
+     <a href="almeida.gabriel1@gsuite.iff.edu.br">almeida.gabriel1@gsuite.iff.edu.br</a>
+     <br>
+          <a href="corleth.h@gsuite.iff.edu.br">corleth.h@gsuite.iff.edu.br</a>
+  </div>
+
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+
+    menuToggle.addEventListener('click', () => {
+      const aberto = navLinks.classList.toggle('aberto');
+      menuToggle.classList.toggle('aberto');
+      menuToggle.setAttribute('aria-expanded', aberto);
+    });
+
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('aberto');
+        menuToggle.classList.remove('aberto');
+        menuToggle.setAttribute('aria-expanded', false);
+      });
+    });
+  </script>
 
 </body>
 </html>
